@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+   
+}
+
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 60px;
+    width: 100%;
+    background:rgba(81, 66, 66, 0.521);
+    backdrop-filter: blur(3px);
+   
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.logo{
+    color: rgb(182, 140, 77);
+    font-family:  Helvetica;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.active{
+    background: rgb(221, 159, 32);
+    width: 100%;
+    transform: translateY(2px);
+    display: inline-block;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;  
+}
+
+.navbar ul li{
+    padding: 10px;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.navbar ul li #a{
+    margin-top: 3px;
+    display: inline-block;
+    transition: o.2s;
+}
+
+.navbar ul li #a:hover{
+    background: rgb(221, 159, 32);
+    width: 100%;
+    transform: translateY(-2px);
+    display: inline-block;
+}
+
+.hero-section {
+    background: url(./pyramid.jpg);
+   background-size: cover;
+   height: 700px;
+}
+
+
+.btn{
+   position: absolute;
+   top: 8%;
+   left: 45%;
+}
+
+
+.btn h2 a{
+    margin-top: 44px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: rgb(24, 25, 15);
+    text-align: center;
+    font-weight: 600;
+
+    
+}
+.btn h2 a:hover{
+    
+    color: white;
+    box-shadow: 0 0 15px black;
+    display: inline-block;
+    border-radius: 35px;
+    background-color: black;
+    
+  
+   
+}
+
+.btn button{
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.btn button:hover{
+   box-shadow:0 12px 16px 0 rgba(255, 255, 255, 0.24),
+   0 17px 50px 0 rgba(255, 255, 255, 0.19);
+   transform: translateY(-2px) scale(1.05);
+   
+}
+.hero-section h2{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(75, 57, 17);
+}
+
+.abt-detail{
+    padding-bottom: 50px;
+}
+.abt-detail h2{
+    padding: 40px 10px;
+    color: rgb(75, 57, 17);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.aboutus {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-info{
+    background-color: rgb(143, 143, 114);
+    border-radius: 20px;
+    padding: 30px 80px;
+}
+
+.about-info p{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold; 
+}
+
+.about-info ul li{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.team{
+    background-color: rgb(212, 170, 117);
+    padding: 200px 0px;
+}
+
+
+.team h2{
+    font-size: 150px;
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background: rgb(36, 35, 35);
+}
+
+
+fieldset{
+    color: white;
+    border: 2px solid rgb(246, 242, 242);
+    border-radius: 20px;
+    width: 450px;
+    height: 450px;
+    padding: 0px 20px;
+    /* margin-left: 4%; */
+}
+
+
+
+.contact_head{
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+
+hr{
+    border: 1px solid white;
+    border-radius: 10px;
+    align-items: center;
+}
+
+form fieldset label{
+    font-size: 14px;
+    font-weight: 600;    
+}
+
+form fieldset label input{
+    margin-bottom: 20px;
+    border: none;
+}
+
+.name-box{
+    width: 70%;
+    margin-left: 24px;
+    padding: 4px;
+    border-radius: 10px;
+}
+.address-box{
+    width: 70%;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.feedback{
+    width: 88%;
+    border-radius: 4px;
+    height: 40%;
+}
+
+.form-btn{
+    border: none;
+    border-radius: 20px;
+    padding: 6px 8px;
+}
+
+.end-details{
+    width: 40%;
+    color: white;
+    text-align: justify;
+    margin: 20px 50px;
+}
+.end-details p{
+    line-height: 1.5;
+}
+.end-details h2{
+     
+    font-size: 45px;
+ }
+
+
+
+
+
+.icon a{
+    font-size: 25px;
+    color:black;
+}
+
+#social{
+
+    display: flex ;
+    /* background-color: rgb(47, 109, 163); */
+    /* padding: 10px 0px; */
+    margin-left: 40px;
+    padding-bottom:10px ;
+    margin-top: 20px; 
+    gap: 40px;
+}
+
+
+
+
+#copyright {
+    margin-left: 1000px;
+    /* justify-content: right; */
+    text-align: right;
+    color:rgb(11, 1, 1);
+    text-transform: uppercase;
+   font-weight: bold;
+}
+
+#about-btn h2 a{
+    
+    position: absolute;
+    
+    right: 19%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#about-btn h2 a:hover{
+    font-size: 1.7rem;
+    border-radius: 35px;
+    color: rgb(244, 241, 241);
+    background-color: rgb(15, 3, 3);
+    box-shadow: 0 0 15px rgb(234, 228, 228);
+    display: inline-block;
+
+
+}
+
+
+/* .contact-us{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+} */
+
+/* form{
+    width: 100%;
+ 
+    height: 200px;
+}
+
+form input{
+
+    width: 80%;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+
+ .name{
+    margin-bottom: 120px;
+ } */
+
