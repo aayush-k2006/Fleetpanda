@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Fill the form below.</h1>
+    </header>
+    <form onsubmit="formValidate(event)">
+      <label for="Fname" class="label">Full Name</label>
+      <input
+        class="box"
+        type="text"
+        id="Fname"
+        placeholder="Enter your Full Name"
+        autocomplete="off"
+      />
+      <p class="errorMessage" id="nameError"></p>
+
+      <label class="label" for="address">Address</label>
+      <input
+        class="box"
+        type="text"
+        id="address"
+        placeholder="Enter your Address"
+        autocomplete="off"
+      />
+      <p class="errorMessage" id="addressError"></p>
+
+      <label class="label" for="email">Email</label>
+      <input
+        class="box"
+        type="email"
+        id="email"
+        placeholder="Enter your Email"
+        autocomplete="off"
+      />
+      <p class="errorMessage" id="mailError"></p>
+
+      <!-- <label class="label" for="country">Country</label>
+      <input
+        class="box"
+        type="text"
+        id="country"
+        placeholder="Enter Country name"
+        autocomplete="off"
+      /><p class="errorMessage" id="countryError"></p> -->
+
+      <label class="label" for="feedback">Feedback</label><br />
+      <textarea
+        name="area"
+        id="feed"
+        placeholder="Enter your message here...."
+        rows="7"
+        cols="40"
+      ></textarea>
+      <p class="errorMessage" id="feedbackError"></p>
+      <br /><br />
+      <button class="submit_btn">Submit</button>
+    </form>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.459609829178!2d85.32862817492288!3d27.703092225680173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b722731625%3A0x598d81aa2cbd6d37!2sBurritolabs!5e0!3m2!1sen!2snp!4v1721290283923!5m2!1sen!2snp"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>

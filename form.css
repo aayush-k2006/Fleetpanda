@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+header h1 {
+  color: rgb(83, 38, 6);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+form {
+  /* border: 1px solid red; */
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgb(86, 54, 34);
+}
+
+.box {
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  display: block;
+}
+
+.submit_btn {
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+
+.label {
+  padding: 5px 0;
+  /* background-color: aqua; */
+  display: inline-block;
+  /* height: 60px; */
+  /* padding: 10px; */
+  width: 80px;
+  color: white;
+}
+
+.map iframe {
+  width: 300px;
+  height: 200px;
+}
+
+.map {
+  padding: 20px 0;
+  display: grid;
+
+  place-items: center;
+}
+
+.errorMessage {
+  font-size: 13px;
+  margin: 0;
+  color: red;
+}
