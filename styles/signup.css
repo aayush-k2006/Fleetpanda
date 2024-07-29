@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  padding: 20px 60px;
+  width: 100%;
+  background: rgba(56, 47, 47, 0.423);
+  backdrop-filter: blur(3px);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li a:hover {
+  color: orange;
+}
+
+.signup-btn {
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.signup-btn:hover {
+  background-color: rgba(255, 166, 0, 0.776);
+  color: white !important;
+}
+
+.signup__container {
+  /* text-align: center; */
+  /* display: inline-block; */
+  box-shadow:  0 0 15px rgb(59, 36, 36);
+  background-color: white;
+  width: 500px;
+  height: 600px;
+  /* border: 2px solid black; */
+  margin: 120px auto 0px;
+}
+
+.signup__container h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* .login__container input{
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 0px;
+  margin: auto;
+  display: block;
+} */
+
+
+.errors{
+  color: red;
+  font-size: 10px;
+
+}
+
+
+.input_fields {
+  /* display: block; */
+  margin: 15px 5px;
+  /* border: 2px solid black; */
+}
+
+.input_fields input {
+  display: block;
+  padding: 10px 2px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.input_fields label {
+  font-size: 1rem;
+}
+
+.signup_end {
+  /* margin-bottom: 50px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+
+  /* .login-btn {
+    margin: 0;
+    position: absolute;
+    top: 52%;
+    left: 56%;
+    margin-left: 372px;
+  } */
+
+.forgot a{
+  font-size: 12px;
+  text-decoration: none;
+
+}
+
+.forgot{
+  text-align: right;
+}
+
+.signup_end button {
+    top: 57%;
+  right: 37%;
+  position: absolute;
+  border: 1px solid;
+  font-size: 1.2rem;
+  width: 26%;
+  border-radius: 8px;
+  padding: 10px 40px;
+}
+
+.signup_end button:hover {
+ box-shadow:  0 0 15px rgb(59, 36, 36);
+ font-size: 1.3rem;
+}
+
+/* .login__container_line {
+  margin-left: 25px;
+  width: 90%;
+  margin-top: 90px;
+} */
+
+.ending_line{
+ 
+  margin-top: 200px;
+
+}
+
+
+.logout{
+  cursor: pointer;
+}

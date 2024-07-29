@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="navbar">
+        <h1 class="logo">FLEETPANDA</h1>
+        <div class="nav-menu">
+          <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a id="a" href="#about">Abouts Us</a></li>
+            <li><a id="a" href="./app/form.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="login-signup">
+          <ul>
+            <li><a href="">Login</a></li>
+            <li><a class="signup-btn" href="./signup.html">Signup</a></li>
+          </ul>
+        </div>
+
+        <div class="logout">
+          <ul>
+            <li><a >Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <form class="login__container">
+        <h2>Login</h2>
+        <div class="input_fields">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="text"
+            required
+            placeholder="Enter your email"
+          />
+          <p class="errors" id="emailError"></p>
+        </div>
+
+        <div class="input_fields">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            required
+            placeholder="Enter your Password"
+          />
+          <p class="errors" id="passwordError"></p>
+
+          <div class="forgot"><a href="">Forgot Password?</a></div>
+        </div>
+
+        <div class="login_end">
+          <div><input type="checkbox" /> Remember me.</div>
+          <div><button>Login</button></div>
+        </div>
+
+        <hr class="login__container_line" />
+      </form>
+
+      <hr class="ending_line" />
+
+      <footer>
+        <div class="footer">
+          <div class="social__wrapper">
+            <div class="icon">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div id="copyright">&copy;Copyright 2024 Fleetpanda</div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../scripts/login.js"></script>
+    <!-- <script type="module" src="../scripts/index.js"></script> -->
+  </body>
+</html>

@@ -1,142 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <div class="main-container">
-        <nav class="navbar">
-            <h1 class="logo">FLEETPANDA</h1>
+      <nav class="navbar">
+        <h1 class="logo">FLEETPANDA</h1>
+        <div class="nav-menu">
+          <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a id="a" href="#about">Abouts Us</a></li>
+            <li><a id="a" href="./app/form.html">Contact Us</a></li>
+            <li><a id="a" href="./app/blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="login-signup">
+          <ul>
+            <li><a href="./app/login.html">Login</a></li>
+            <li><a href="./app/signup-btn">Signup</a></li>
+          </ul>
+        </div>
+
+        <div class="logout">
+          <ul>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero-section">
+        <h2>Welcome to Fleetpanda</h2>
+        <div class="btn">
+          <h2><a href="#footer">JOIN US</a></h2>
+          <!-- <button>Join Us</button> -->
+        </div>
+      </div>
+
+      <div class="abt-detail">
+        <h2>About Us</h2>
+        <div class="aboutus">
+          <div class="about-info" id="about">
+            <p>Our Web Services:</p>
             <ul>
-                <li><a class="active" href="">Home</a></li>
-                <li><a id="a" href="#about">Abouts Us</a></li>
-                <li><a id="a" href="./form.html">Contact Us</a></li>
+              <li>Content Management System</li>
+              <li>E-commerce Development</li>
+              <li>SEO Optimization</li>
+              <li>SEO Optimization</li>
+              <li>SEO Optimization</li>
+              <li>SEO Optimization</li>
             </ul>
-        </nav>
-
-        <div class="hero-section">
-            <h2>Welcome to Fleetpanda</h2>
-            <div class="btn">
-                <h2> <a href="">JOIN US</a></h2>
-                <!-- <button>Join Us</button> -->
-            </div>
-
+          </div>
+          <div class="about-info">
+            <p>Our Mobile Services:</p>
+            <ul>
+              <li>Native Mobile App Development</li>
+              <li>Mobile Web Development</li>
+              <li>Mobile App UI/UX Design</li>
+              <li>Mobile App UI/UX Design</li>
+              <li>Mobile App UI/UX Design</li>
+              <li>Mobile App UI/UX Design</li>
+            </ul>
+          </div>
+          <div class="about-info">
+            <p>Our Design Services:</p>
+            <ul>
+              <li>Graphic Design</li>
+              <li>Product Design</li>
+              <li>Web Design</li>
+              <li>Web Design</li>
+              <li>Web Design</li>
+              <li>Web Design</li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="abt-detail">
-            <h2>About Us</h2>
-            <div class="aboutus">
-                <div class="about-info" id="about">
-                    <P>Our Web Services:</P>
-                    <ul>
-                        <li>Content Management System</li>
-                        <li>E-commerce Development</li>
-                        <li>SEO Optimization</li>
-                        <li>SEO Optimization</li>
-                        <li>SEO Optimization</li>
-                        <li>SEO Optimization</li>
-                    </ul>
-                </div>
-                <div class="about-info">
-                    <P>Our Mobile Services:</P>
-                    <ul>
-                        <li>Native Mobile App Development</li>
-                        <li>Mobile Web Development</li>
-                        <li>Mobile App UI/UX Design</li>
-                        <li>Mobile App UI/UX Design</li>
-                        <li>Mobile App UI/UX Design</li>
-                        <li>Mobile App UI/UX Design</li>
-                    </ul>
-                </div>
-                <div class="about-info">
-                    <P>Our Design Services:</P>
-                    <ul>
-                        <li>Graphic Design</li>
-                        <li>Product Design</li>
-                        <li>Web Design</li>
-                        <li>Web Design</li>
-                        <li>Web Design</li>
-                        <li>Web Design</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="team">
+        <h2>Who We Are.</h2>
+      </div>
+
+      <footer id="footer">
+        <form action="">
+          <fieldset>
+            <h1 class="contact_head">Contact Us</h1>
+            <hr />
+            <br />
+            <label for="name"
+              >Name:
+              <input
+                class="name-box"
+                type="text"
+                placeholder="Enter Your Name"
+              /> </label
+            ><br />
+
+            <label for="Address"
+              >Address:
+              <input
+                class="address-box"
+                type="text"
+                placeholder="Enter Your Address"
+              /> </label
+            ><br />
+            <textarea
+              class="feedback"
+              rows="50"
+              cols="40"
+              name="feedback"
+              placeholder="Enter your message here......."
+            ></textarea
+            ><br />
+            <button class="form-btn">Submit</button>
+          </fieldset>
+        </form>
+
+        <div class="end-details">
+          <h2>FleetPanda</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos
+            sed culpa esse consectetur soluta ad amet nostrum, odit,
+            consequuntur praesentium eligendi expedita fuga? Quidem recusandae
+            deserunt alias doloribus quia. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Error, iure quos consectetur enim et
+            reprehenderit quibusdam vitae facere molestiae expedita nobis illum
+            cumque eaque culpa praesentium dolor sed a omnis? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Error quos sed culpa esse
+            consectetur soluta ad amet nostrum, odit, consequuntur praesentium
+            eligendi expedita fuga? Quidem recusandae deserunt alias doloribus
+            quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Error, iure quos consectetur enim et reprehenderit quibusdam vitae
+            facere molestiae expedita nobis illum cumque eaque culpa praesentium
+            dolor sed a omnis?
+          </p>
+          <br /><br />
+
+          <div id="about-btn">
+            <h2><a href="">About Us</a></h2>
+          </div>
         </div>
+      </footer>
 
-        <div class="team">
-            <h2>Who We Are.</h2>
-
-        </div>
-
-        <footer>
-            <form action="">
-                <fieldset>
-                    <h1 class="contact_head">Contact Us</h1>
-                    <hr><br>
-                    <label for="name">Name:
-                        <input class="name-box" type="text" placeholder="Enter Your Name">
-                    </label><br>
-
-                    <label for="Address">Address:
-                        <input class="address-box" type="text" placeholder="Enter Your Address">
-                    </label><br>
-                    <textarea class="feedback" rows="50" cols="40"
-                        name="feedback">Enter your Feedback here.....</textarea><br>
-                    <button class="form-btn">Submit</button>
-                </fieldset>
-            </form>
-
-            <div class="end-details">
-                <h2>FleetPanda</h2><br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos sed culpa esse consectetur soluta
-                    ad
-                    amet nostrum, odit, consequuntur praesentium eligendi expedita fuga? Quidem recusandae deserunt
-                    alias
-                    doloribus quia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iure quos consectetur enim et
-                    reprehenderit quibusdam vitae facere molestiae expedita nobis illum cumque eaque culpa praesentium
-                    dolor sed a omnis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos sed culpa esse consectetur soluta
-                    ad
-                    amet nostrum, odit, consequuntur praesentium eligendi expedita fuga? Quidem recusandae deserunt
-                    alias
-                    doloribus quia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iure quos consectetur enim et
-                    reprehenderit quibusdam vitae facere molestiae expedita nobis illum cumque eaque culpa praesentium
-                    dolor sed a omnis?
-                </p>
-                <br><br>
-
-                <div id="about-btn">
-                    <h2><a href="">About Us</a> </h2>
-                </div>
-            </div>
-
-        </footer>
-
-
-        <div id="social">
-            <div id="soc">
-                <div class="icon"><a href=""><i class=" fa-brands fa-instagram"></i></a></div>
-                <div class="icon"><a href=""><i class=" fa-brands fa-facebook"></i></a></div>
-                <div class="icon"><a href=""><i class=" fa-brands fa-linkedin"></i></a></div>
-            </div>
-            <div id="copyright">
-                &copy;Copyright 2024 Fleetpanda
-            </div>
-           
-        </div>
-
-      
+      <div id="social">
+        <!-- <div id="soc">
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div> -->
+        <div id="copyright">&copy;Copyright 2024 Fleetpanda</div>
+      </div>
     </div>
 
-</body>
-
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
 </html>
